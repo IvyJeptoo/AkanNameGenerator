@@ -36,3 +36,10 @@ body{
     font-weight: 700;   
     text-align: center;
 }
+.dategender{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
