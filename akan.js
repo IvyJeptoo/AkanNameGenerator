@@ -10,6 +10,10 @@ function checkDay(x) {
     let z = document.getElementById("message");
     z.innerHTML = (`Hi! you were born on a ${days[index]} and your Akan name is ${femaleNames[index]}.`)
 }
+function displayContainer() {
+    let pageOne = document.getElementById("container1");
+    let pageTwo = document.getElementById("container2")
+}
 
 function displayDate(){
 
