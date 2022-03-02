@@ -11,3 +11,28 @@ body{
     height: 100vh;
     font-weight: 700;
 }
+#myForm{
+    margin-left: 20%;
+    border: 1px solid black;    
+    background-color: rgba(220, 220, 220, 0.5);    
+    height: 80%;
+    width: 60%;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;    
+    align-items: left;
+    margin-top: 8%;    
+}
+.dateinput{
+    margin-top: 10px;    
+    justify-content: space-evenly;
+}
+.btn{
+    margin-top:25%;
+    color: black !important;      
+  }
+  .text{
+    color: black;
+    font-weight: 700;   
+    text-align: center;
+}
