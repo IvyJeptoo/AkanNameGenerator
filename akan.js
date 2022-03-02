@@ -3,8 +3,8 @@ let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
 let femaleNames = ["Akosue", "Adwoa", "Abenaa", "Akue", "Yaa", "Afua", "Ama"]
 let genders = document.getElementsByClassName("gender")
 
-function checkDay(x) {
-    let isValidDate = Date.parse(x);
+function checkDay(dateInput) {
+    let isValidDate = Date.parse(dateInput);
     let date = new Date(isValidDate);
     let index = date.getDay();
     let z = document.getElementById("message");
@@ -12,9 +12,15 @@ function checkDay(x) {
 }
 function displayContainer() {
     let pageOne = document.getElementById("container1");
-    let pageTwo = document.getElementById("container2")
+    let pageTwo = document.getElementById("container2");
+    pageOne.style.display = "none";
+    pageTwo.style.display = "block";
 }
 
 function displayDate(){
+    let dateInput = document.forms["myForm"]["date"].value;
+    let sexInput = document.forms["myForm"]["sex"].value;
+
+    
 
 }
