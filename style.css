@@ -31,6 +31,11 @@ body{
     margin-top:25%;
     color: black !important;      
   }
+.btn:hover{
+    background-color: black !important;
+    color: white !important;
+
+}
   .text{
     color: black;
     font-weight: 700;   
