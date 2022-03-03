@@ -8,7 +8,8 @@ body{
     background: url(/images/pexels-dazzle-jam-1029783.jpg);    
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+    overflow-y: hidden;
     font-weight: 700;
 }
 #myForm{
@@ -48,9 +49,31 @@ body{
     width: 50% !important;
     height: 80%;
     background-color: white;
-    border-radius: 6%;
-    
+    border-radius: 6%;    
 }
 .forms-checker{
     margin-top: 20px;
+}
+#message{     
+    
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    text-align: center;      
+}
+#pmessage{
+    /* border-radius: 10px;*/
+    width: 50% !important;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 280px;
 }
