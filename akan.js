@@ -12,6 +12,9 @@ function displayDate(){
     if (x == ""){
         alert("This is not a valid date format!!")
     }    
+    if (y == "") {
+        alert("Please select your gender!!")
+    }
     
     checkDay(x);
     displayContainer();
