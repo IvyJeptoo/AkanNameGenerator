@@ -18,5 +18,5 @@ Ensure you have installed visual studio in your operating system. There is also 
 HTMLs- this allows elements creation which later on builds the structure pages CSS- this is used to style the pages created in html Javascript - this is used to add advanced styling to the html.
 JavaScript - this is used to create the functionality of our page.
 
-## about author
+### about author
 Slack profile-[IvyJeptoo]
