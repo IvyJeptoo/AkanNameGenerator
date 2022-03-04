@@ -4,46 +4,35 @@ let femaleNames = ["Akosue", "Adwoa", "Abenaa", "Akue", "Yaa", "Afua", "Ama"];
 let genders = document.getElementsByClassName("gender");
 
 
+
 function displayDate(){
-
-    let x = document.forms["myForm"]["date"].value;
+    let x = document.forms["myForm"]["date"].value;  
     let y = document.forms["myForm"]["sex"].value;
+    let isValidDate = Date.parse(x);
+    let date = new Date(isValidDate);
+    let index = date.getDay();
+    let z = document.getElementById("message");
 
-    if (x == ""){
+    
+    if (x == "" && document.getElementById("flexRadioDefault1").checked) {
+        alert("This is not a valid date format!!!");
+        return false;
+    } else if (x == "" && document.getElementById("flexRadioDefault2").checked) {
         alert("This is not a valid date format!!")
-    }    
-    if (y == "") {
-        alert("Please select your gender!!")
-    }
+        return false;    
+    }else if (x !== "" && document.getElementById("flexRadioDefault1").checked) {
+        z.innerHTML = (`You were born on ${days[index]} and your Akan name is ${maleNames[index]}.`)
+    } else {z.innerHTML = (`You were born on ${days[index]} and your Akan name is ${femaleNames[index]}.`)}     
     
-    checkDay(x);
-    displayContainer();
+    displayContainer();       
     
-    
-    for (let gender of genders) {
-        if(gender.checked){
-            return gender.value
-        }
-    }
 }
 
 function displayContainer() {
     let pageOne = document.getElementById("container1");
-    let pageTwo = document.getElementById("container2");
-    pageOne.style.display = "none";
-    pageTwo.style.display = "block";
-}
-function checkDay(x) {
-    let isValidDate = Date.parse(x);
-    let date = new Date(isValidDate);
-    let d = date.getDate();
-    let m = date.getMonth() + 1;
-    let year = (date.getFullYear()).toString();
-    let c = year.substring(0, 2);
-    let y = year.substring(2, 4);
-    let index = date.getDay();
-    let z = document.getElementById("message");
-    z.innerHTML = (`Hi! you were born on a ${days[index]} and your Akan name is ${femaleNames[index]}.`)
+   let pageTwo = document.getElementById("container2");
+   pageOne.style.display = "none";
+   pageTwo.style.display = "block";
 }
 
 
